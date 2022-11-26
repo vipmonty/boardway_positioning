@@ -1,0 +1,12 @@
+docker compose build
+docker compose up / down
+
+#enter container shell
+docker exec -it boardway_app shell
+
+#once in shell
+python manage.py migrate
+
+python manage.py createsuperuser
+
+#go to localhost:8000/admin to log in
